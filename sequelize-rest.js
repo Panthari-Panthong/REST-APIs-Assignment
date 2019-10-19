@@ -12,7 +12,7 @@ const Movie = sequelize.define('movie', {
 })
 
 
-sequelize.sync({ force: true })
+sequelize.sync()
   //Use the model `create()` method to insert 3 rows
   .then(() => Promise.all([
     Movie.create({
